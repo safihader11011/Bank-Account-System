@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="controller.FixdepController">
+   <children>
+      <ImageView fitHeight="406.0" fitWidth="600.0">
+         <image>
+            <Image url="@pics/wall.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#635b68" height="381.0" layoutX="142.0" layoutY="13.0" opacity="0.88" stroke="BLACK" strokeType="INSIDE" width="341.0" />
+      <TextField fx:id="brcode" layoutX="311.0" layoutY="184.0" onAction="#branchcode" style="-fx-background-color: #a69ea3; -fx-opacity: 0.9;" />
+      <TextField fx:id="acnumber" layoutX="311.0" layoutY="133.0" onAction="#accountnumber" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #a69ea3; -fx-opacity: 0.9;" />
+      <TextField fx:id="title" layoutX="311.0" layoutY="88.0" onAction="#titleofaccount" style="-fx-background-color: #a69ea3; -fx-opacity: 0.9;" />
+      <Label layoutX="181.0" layoutY="24.0" prefHeight="39.0" prefWidth="261.0" text="Enter Account Information" textFill="#12130e" textOverrun="CLIP">
+         <font>
+            <Font name="Algerian" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="88.0" prefHeight="25.0" prefWidth="136.0" text="Title Of Account" textFill="#12130e" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="133.0" prefHeight="25.0" prefWidth="136.0" text="Account Number" textFill="#12130e" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="179.0" prefHeight="25.0" prefWidth="136.0" text="Branch Code" textFill="#12130e" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="submit" layoutX="238.0" layoutY="290.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #a39aa0; -fx-font: lucida bright;" text="Submit">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="14.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.6428571428571428" startX="1.0" startY="0.7047619047619048">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#35142a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Label fx:id="check" layoutX="313.0" layoutY="340.0" prefHeight="28.0" prefWidth="149.0" textFill="#c90000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="231.0" prefHeight="25.0" prefWidth="136.0" text="PIN Number" textFill="#12130e" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="341.0" prefHeight="25.0" prefWidth="136.0" text="Amount" textFill="#12130e" textOverrun="CLIP">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pin" layoutX="311.0" layoutY="231.0" onAction="#pinnumber" opacity="0.9" style="-fx-background-color: #a69ea3;" />
+      <Button fx:id="back" layoutX="34.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" opacity="0.73" prefHeight="4.0" prefWidth="42.0" style="-fx-background-color: #d3cbcb;" text="&lt;=">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.9047619047619048">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#6f6c6c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+   </children>
+</AnchorPane>
